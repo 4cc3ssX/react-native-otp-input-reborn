@@ -1,6 +1,6 @@
 {
-  "name": "@twotalltotems/react-native-otp-input",
-  "version": "1.3.11",
+  "name": "react-native-otp-input-reborn",
+  "version": "1.3.12",
   "description": "is a tiny JS library for one time passcode (OTP). Supports smart input suggestion on iOS and code autofill on Android (it will be filled when you press the copy button on the SMS notification bar)",
   "main": "./dist/index.js",
   "types": "./index.d.ts",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Twotalltotems/react-native-otp-input.git"
+    "url": "git+https://github.com/4cc3ssX/react-native-otp-input-reborn.git"
   },
   "keywords": [
     "react-native",

@@ -9,14 +9,6 @@
 ![demo.gif](https://s3.ca-central-1.amazonaws.com/tttevents/iosvideo.gif)
 ![demo.gif](https://s3.ca-central-1.amazonaws.com/tttevents/android.gif)
 
-## Project Status
-This project is not actively maintained anymore. If you’d like to contribute, we encourage you to fork this repository and improve it for the community.
-
-Here are some alternatives you could try:
-
-- [react-native-otp-inputs](https://www.npmjs.com/package/react-native-otp-inputs)
-- [react-native-otp-textinput](https://www.npmjs.com/package/react-native-otp-textinput)
-
 ## Installation
 
 `npm install --save @twotalltotems/react-native-otp-input`
