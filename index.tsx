@@ -2,7 +2,7 @@
 import {
   InputProps,
   OTPInputViewState,
-} from "@twotalltotems/react-native-otp-input";
+} from "react-native-otp-input-reborn";
 import React, { Component } from "react";
 import {
   View,
