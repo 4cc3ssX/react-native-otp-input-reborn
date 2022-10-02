@@ -1,7 +1,7 @@
 {
   "name": "react-native-otp-input-reborn",
   "version": "1.0.1",
-  "description": "test",
+  "description": "is a tiny JS library for one time passcode (OTP). Supports smart input suggestion on iOS and code autofill on Android (it will be filled when you press the copy button on the SMS notification bar)",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
