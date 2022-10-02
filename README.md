@@ -1,30 +1,22 @@
 ![PaginatableList](https://raw.githubusercontent.com/Twotalltotems/react-native-otp-input/master/assets/otp_banner.jpg)
 
-# React Native OTP Input
+# React Native OTP Input Reborn
 
-![Tests](https://github.com/Twotalltotems/react-native-otp-input/workflows/Tests/badge.svg)
-
-**react-native-otp-input-reborn** is a tiny Javascript library which provides an elegant UI for the end user to input one time passcode (OTP). It handles the input suggestion on iOS when the OTP SMS is received. For Android, it will autofill when the user presses the copy button on the SMS notification bar. It also features a carefully crafted flow to handle edge cases for volatile user gestures. We provide default UI, but you can always customize the appearance as you like.
-
-![demo.gif](https://s3.ca-central-1.amazonaws.com/tttevents/iosvideo.gif)
-![demo.gif](https://s3.ca-central-1.amazonaws.com/tttevents/android.gif)
+is a tiny JS library for one time passcode (OTP). Supports smart input suggestion on iOS and code autofill on Android (it will be filled when you press the copy button on the SMS notification bar)
 
 ## Installation
 
-`npm install --save react-native-otp-input-reborn`
+```sh
+npm install react-native-otp-input-reborn
+```
+
 or
-`yarn add react-native-otp-input-reborn`
 
-## Dependencies
+```sh
+yarn add react-native-otp-input-reborn
+```
 
-### NOTES: 
-From version 1.3.10: We use @react-native-clipboard/clipboard to handle the clipboard in this package, So you should install @react-native-clipboard/clipboard
-
-`npm install --save @react-native-clipboard/clipboard`
-or
-`yarn add @react-native-clipboard/clipboard`
-
-## Basic Usage
+## Usage
 
 ```js
 import OTPInputView from 'react-native-otp-input-reborn'
@@ -92,6 +84,7 @@ const styles = StyleSheet.create({
 | onCodeFilled            | NO       | Callback when the last digit is entered                                                         |
 | secureTextEntry         | NO       | Hide contents of text fields                                                                    |
 | editable                | NO       | Set editable for inputs                                                                         |
+| maxLength               | NO       | Set the maximum length of `TextInput`. Default value is `1`     |
 | keyboardAppearance      | NO       | Keyboard appearance ('default', 'dark', 'light')                                                |
 | keyboardType            | NO       | Keyboard type                                                                                   |
 | clearInputs             | NO       | Clear inputs after entering code                                                                |
@@ -113,69 +106,14 @@ If you are interested in Android SMS Retriever API, we would suggest @Faizal's r
 - [x] Add basic unit tests
 - [ ] Add integration tests
 
-## Contributors
+## Contributing
 
-<table>
-    <tr border="0" style="border: none; ">
-	      <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars1.githubusercontent.com/u/1243479?s=400&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/ansonyao">Anson Yao</a></sub> <br />
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        <div>
-        	<img src="https://avatars3.githubusercontent.com/u/16603120?s=460&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/BeckyWu220">Becky Wu</a></sub> <br />
-        </div>
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars3.githubusercontent.com/u/440097?s=460&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/fpena">Felipe Peña</a></sub> <br />
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars3.githubusercontent.com/u/60905710?s=400&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/ericdao-ttt">Eric Dao</a></sub> <br />
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars3.githubusercontent.com/u/3868329?s=460&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/VinsonLi">Vinson Li</a></sub> <br />
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars0.githubusercontent.com/u/15810133?s=400&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/felixcck">Felix Cheng</a></sub> <br />
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars3.githubusercontent.com/u/10748192?s=460&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/MitchellGanton">Mitchell Ganton</a></sub> <br />
-        </th>
-    </tr>
-</table>
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
-## External Contributors
+## License
 
-<table>
-    <tr border="0" style="border: none; ">
-        <th border="0" style="border-left: none; border-right: none;">
-        <div>
-        	<img src="https://avatars2.githubusercontent.com/u/17710983?s=400&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/mikhailshvets">Mikhail.sh</a></sub> <br />
-        </div>
-        </th>
-    </tr>
-</table>
+MIT
 
-## About the Creators
+---
 
-OTP input is developed by the mobile team at [TTT Studios](https://ttt.studio). We are a Digital Innovation Studio based out of Vancouver, Canada, delivering custom software and solutions that are designed and developed 100% in-house. The technologies we work with include AR & VR, IoT, AI, security & encryption, and cloud computing.
-
-<div align="right">
-	<img src="https://ttt.studio/wp-content/themes/tttwordpresstheme/imgs/ttt-colour.png" width="200px"/>
-	<h5>Empowering Business Through Technology</h5>
-</div>
+Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
